@@ -10,7 +10,7 @@ function userLoggedIn(user) {
 }
 
 export function loginUser() {
-  return function(dispatch) {
+  return function (dispatch) {
     // UPort and its web3 instance are defined in ./../../../util/wrappers.
     // Request uPort persona of account passed via QR
     uport.requestCredentials({
@@ -22,8 +22,7 @@ export function loginUser() {
       // This way, once logged in a user can still access the home page.
       var currentLocation = browserHistory.getCurrentLocation()
 
-      if ('redirect' in currentLocation.query)
-      {
+      if ('redirect' in currentLocation.query) {
         return browserHistory.push(decodeURIComponent(currentLocation.query.redirect))
       }
 
