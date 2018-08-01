@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
+import AttestButton from './AttestButton'
 
-class Profile extends Component {
+class Attest extends Component {
   constructor(props, { authData }) {
     super(props)
     authData = this.props
@@ -11,8 +12,8 @@ class Profile extends Component {
       <main className="container">
         <div className="pure-g">
           <div className="pure-u-1-1">
-            <h1>Profile</h1>
-            <p>Change these details in UPort to see them reflected here.</p>
+            <h1>Verify Event Attendance</h1>
+            <p>Request event attendance attestation using UPort.</p>
             <p>
               <strong>Name</strong><br />
               {this.props.authData.name}
@@ -22,16 +23,11 @@ class Profile extends Component {
               {this.props.authData.email}
             </p>
             <p>
-              <strong>Phone</strong><br />
-              {this.props.authData.phone}
-            </p>
-            <p>
-              <strong>Country</strong><br />
-              {this.props.authData.country}
-            </p>
-            <p>
               <strong>Address</strong><br />
               {this.props.authData.address}
+            </p>
+            <p>
+              <AttestButton />
             </p>
           </div>
         </div>
@@ -40,4 +36,4 @@ class Profile extends Component {
   }
 }
 
-export default Profile
+export default Attest

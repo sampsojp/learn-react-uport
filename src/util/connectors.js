@@ -1,7 +1,5 @@
 import { Connect, SimpleSigner } from 'uport-connect'
 
-//export let uport = new Connect('TruffleBox')
-
 export let uport = new Connect('ReactUport Box2', {
     clientId: '2ok5fycGvGXiU2t5KtBvntNJxkrKPhT9HJE',
     network: 'rinkeby',
