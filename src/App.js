@@ -20,7 +20,7 @@ class App extends Component {
           <Link to="/dashboard" className="pure-menu-link">Dashboard</Link>
         </li>
         <li className="pure-menu-item">
-          <Link to="/attest" className="pure-menu-link">Attest</Link>
+          <Link to="/attest" className="pure-menu-link">Verify Attendance</Link>
         </li>        
         <li className="pure-menu-item">
           <Link to="/profile" className="pure-menu-link">Profile</Link>
